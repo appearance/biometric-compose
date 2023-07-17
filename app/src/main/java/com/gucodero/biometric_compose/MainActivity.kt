@@ -22,9 +22,7 @@ import com.gucodero.biometric_compose.entities.CiphertextWrapper
 import com.gucodero.biometric_compose.entities.DecryptionResult
 import com.gucodero.biometric_compose.entities.EncryptionResult
 import com.gucodero.biometric_compose.utils.isBiometricPromptIsAvailable
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 class MainActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
