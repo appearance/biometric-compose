@@ -1,6 +1,8 @@
 package com.gucodero.biometric_compose
 
 import android.content.Context
+import com.gucodero.biometric_compose.Extensions.toPreservedByteArray
+import com.gucodero.biometric_compose.Extensions.toPreservedString
 
 
 /**
@@ -55,14 +57,4 @@ class PreferenceUtil(context: Context) {
         private const val CIPHER_TEXT = "cipher_text"
         private const val IV = "initialization_vector"
     }
-
-    val String.toPreservedByteArray: ByteArray
-        get() {
-            return this.toByteArray(Charsets.ISO_8859_1)
-        }
-
-    val ByteArray.toPreservedString: String
-        get() {
-            return String(this, Charsets.ISO_8859_1)
-        }
 }
